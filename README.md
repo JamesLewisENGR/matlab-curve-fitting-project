@@ -4,6 +4,8 @@ This project uses curve fitting methods in MATLAB to model the relationship betw
 
 For each equation, I used two methods: General Linear Least Squares (GLLS) and MATLAB's `fminsearch`. This gave me four different curve fits to compare. I compared the fits using standard error and R² to determine which equation and method fit the experimental data the best.
 
+**[View my original project report (PDF)](Project%20%232%20Lewis%20James%20Applied%20Numerical%20Methods.pdf)**
+
 ![Copper Thermal Conductivity Curve Fits](docs/curve_fit_plot.svg)
 
 ## Methods
@@ -33,11 +35,11 @@ Equation 2 fit the experimental data better than Equation 1. `fminsearch` also g
 
 ## Files
 
+- [`Project #2 Lewis James Applied Numerical Methods.pdf`](Project%20%232%20Lewis%20James%20Applied%20Numerical%20Methods.pdf) - original submitted project report
 - `project2.m` - MATLAB code used for the curve fitting analysis
 - `therm_con.dat` - experimental temperature and thermal conductivity data
 - `CurveFitResults.csv` - standard error and R² results
 - `CurveFitCoefficients.csv` - calculated curve-fit coefficients
-- [`docs/project-report.md`](docs/project-report.md) - project write-up
 - [`docs/curve_fit_plot.svg`](docs/curve_fit_plot.svg) - comparison graph
 
 ## What I Used
