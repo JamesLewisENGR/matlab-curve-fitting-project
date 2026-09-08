@@ -9,6 +9,8 @@ Two candidate equations were evaluated using two numerical fitting methods:
 
 This produced four total curve fits, which were compared using standard error and R².
 
+![Copper Thermal Conductivity Curve Fits](docs/curve_fit_plot.svg)
+
 ## Best Result
 
 The best-performing model was **Equation 2 using `fminsearch`**:
@@ -72,6 +74,8 @@ Each curve fit was evaluated using standard error, R², residual error, and visu
 - `therm_con.dat` — experimental copper thermal-conductivity data
 - `CurveFitResults.csv` — standard error and R² results for all four fits
 - `CurveFitCoefficients.csv` — fitted model coefficients
+- [`docs/project-report.md`](docs/project-report.md) — full project write-up in GitHub-readable format
+- [`docs/curve_fit_plot.svg`](docs/curve_fit_plot.svg) — curve-fit comparison figure
 
 ## Skills Demonstrated
 
