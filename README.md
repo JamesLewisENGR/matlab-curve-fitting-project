@@ -1,54 +1,26 @@
-# MATLAB Curve Fitting for Copper Thermal Conductivity
+# MATLAB Curve Fitting Project
 
-This engineering project uses MATLAB to model the thermal conductivity of copper as a function of temperature using experimental data.
+This project uses curve fitting methods in MATLAB to model the relationship between temperature and the thermal conductivity of copper. I used experimental temperature and thermal conductivity data and tested two different model equations.
 
-Two candidate equations were evaluated using two numerical fitting methods:
-
-- General Linear Least Squares (GLLS)
-- MATLAB `fminsearch` nonlinear optimization
-
-This produced four total curve fits, which were compared using standard error and R².
+For each equation, I used two methods: General Linear Least Squares (GLLS) and MATLAB's `fminsearch`. This gave me four different curve fits to compare. I compared the fits using standard error and R² to determine which equation and method fit the experimental data the best.
 
 ![Copper Thermal Conductivity Curve Fits](docs/curve_fit_plot.svg)
 
-## Best Result
+## Methods
 
-The best-performing model was **Equation 2 using `fminsearch`**:
+For GLLS, I took the reciprocal of each model equation to linearize it so the coefficients could be solved using a linear least-squares solution. I also used `fminsearch`, which adjusted the coefficients to minimize the sum of the squared residuals between the measured and predicted thermal conductivity values.
 
-- Standard Error: **79.04 W/m·K**
-- R²: **0.98925**
+The two model equations used were:
 
-This result provided the closest agreement with the experimental copper thermal-conductivity data.
-
-## Model Equations
-
-### Equation 1
+**Equation 1**
 
 `k = 1 / (c1/T + c2*T^2)`
 
-### Equation 2
+**Equation 2**
 
 `k = 1 / (c1/T + c2*T + c3*T^2)`
 
-where:
-
-- `T` = temperature in Kelvin
-- `k` = thermal conductivity in W/m·K
-- `c1`, `c2`, `c3` = fitted model coefficients
-
-## Numerical Methods
-
-### General Linear Least Squares
-
-The equations were transformed into reciprocal linear forms so the unknown coefficients could be solved using a least-squares matrix system in MATLAB.
-
-### `fminsearch` Optimization
-
-The GLLS coefficients were used as initial guesses for MATLAB's `fminsearch` function. The optimizer adjusted the coefficients to minimize the sum of squared residuals between measured and predicted thermal conductivity values.
-
-## Model Evaluation
-
-Each curve fit was evaluated using standard error, R², residual error, and visual comparison with the experimental data.
+## Results
 
 | Model | Method | Standard Error (W/m·K) | R² |
 |---|---|---:|---:|
@@ -57,39 +29,20 @@ Each curve fit was evaluated using standard error, R², residual error, and visu
 | Equation 2 | GLLS | 82.42 | 0.98831 |
 | **Equation 2** | **fminsearch** | **79.04** | **0.98925** |
 
-## MATLAB Workflow
+Equation 2 fit the experimental data better than Equation 1. `fminsearch` also gave a slightly better fit than GLLS for Equation 2. The best overall fit was **Equation 2 using `fminsearch`**, with a standard error of about **79.04 W/m·K** and an R² of **0.98925**.
 
-1. Import experimental temperature and conductivity data.
-2. Linearize the candidate equations for GLLS.
-3. Solve for model coefficients using MATLAB left division.
-4. Use the GLLS solutions as starting points for `fminsearch`.
-5. Calculate predicted thermal conductivity values.
-6. Compute residual error, standard error, and R².
-7. Plot all four fitted curves against the experimental data.
-8. Export numerical results to CSV files.
+## Files
 
-## Repository Contents
+- `project2.m` - MATLAB code used for the curve fitting analysis
+- `therm_con.dat` - experimental temperature and thermal conductivity data
+- `CurveFitResults.csv` - standard error and R² results
+- `CurveFitCoefficients.csv` - calculated curve-fit coefficients
+- [`docs/project-report.md`](docs/project-report.md) - project write-up
+- [`docs/curve_fit_plot.svg`](docs/curve_fit_plot.svg) - comparison graph
 
-- `project2.m` — MATLAB implementation of both equations and fitting methods
-- `therm_con.dat` — experimental copper thermal-conductivity data
-- `CurveFitResults.csv` — standard error and R² results for all four fits
-- `CurveFitCoefficients.csv` — fitted model coefficients
-- [`docs/project-report.md`](docs/project-report.md) — full project write-up in GitHub-readable format
-- [`docs/curve_fit_plot.svg`](docs/curve_fit_plot.svg) — curve-fit comparison figure
+## What I Used
 
-## Skills Demonstrated
+MATLAB, General Linear Least Squares, `fminsearch`, curve fitting, error analysis, and data visualization.
 
-- MATLAB programming
-- Numerical methods
-- Least-squares curve fitting
-- Nonlinear optimization
-- Engineering data analysis
-- Model validation
-- Error analysis
-- Data visualization
-
-## Course
-
-**ENGR 240 — Applied Numerical Methods**
-
-Project completed by **James Lewis**.
+**ENGR 240 - Applied Numerical Methods**  
+James Lewis
