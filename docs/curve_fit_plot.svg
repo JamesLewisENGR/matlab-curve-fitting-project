@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#222}.axis{stroke:#333;stroke-width:1}.grid{stroke:#ddd;stroke-width:1}.curve{fill:none;stroke-width:2}.data{fill:#1f77b4}</style>
+<text x="450.0" y="28" text-anchor="middle" font-size="22" font-weight="bold">Copper Thermal Conductivity Curve Fits</text>
+<line class="grid" x1="80.0" y1="50" x2="80.0" y2="490"/><text x="80.0" y="512" text-anchor="middle" font-size="13">10</text>
+<line class="grid" x1="174.0" y1="50" x2="174.0" y2="490"/><text x="174.0" y="512" text-anchor="middle" font-size="13">15</text>
+<line class="grid" x1="268.1" y1="50" x2="268.1" y2="490"/><text x="268.1" y="512" text-anchor="middle" font-size="13">20</text>
+<line class="grid" x1="362.1" y1="50" x2="362.1" y2="490"/><text x="362.1" y="512" text-anchor="middle" font-size="13">25</text>
+<line class="grid" x1="456.2" y1="50" x2="456.2" y2="490"/><text x="456.2" y="512" text-anchor="middle" font-size="13">30</text>
+<line class="grid" x1="550.2" y1="50" x2="550.2" y2="490"/><text x="550.2" y="512" text-anchor="middle" font-size="13">35</text>
+<line class="grid" x1="644.3" y1="50" x2="644.3" y2="490"/><text x="644.3" y="512" text-anchor="middle" font-size="13">40</text>
+<line class="grid" x1="738.3" y1="50" x2="738.3" y2="490"/><text x="738.3" y="512" text-anchor="middle" font-size="13">45</text>
+<line class="grid" x1="832.4" y1="50" x2="832.4" y2="490"/><text x="832.4" y="512" text-anchor="middle" font-size="13">50</text>
+<line class="grid" x1="80" y1="456.2" x2="870" y2="456.2"/><text x="70" y="460.2" text-anchor="end" font-size="13">1000</text>
+<line class="grid" x1="80" y1="371.5" x2="870" y2="371.5"/><text x="70" y="375.5" text-anchor="end" font-size="13">1500</text>
+<line class="grid" x1="80" y1="286.9" x2="870" y2="286.9"/><text x="70" y="290.9" text-anchor="end" font-size="13">2000</text>
+<line class="grid" x1="80" y1="202.3" x2="870" y2="202.3"/><text x="70" y="206.3" text-anchor="end" font-size="13">2500</text>
+<line class="grid" x1="80" y1="117.7" x2="870" y2="117.7"/><text x="70" y="121.7" text-anchor="end" font-size="13">3000</text>
+<line class="axis" x1="80" y1="50" x2="80" y2="490"/>
+<line class="axis" x1="80" y1="490" x2="870" y2="490"/>
+<text x="475.0" y="538" text-anchor="middle" font-size="15">Temperature (K)</text>
+<text x="20" y="270.0" transform="rotate(-90 20 270.0)" text-anchor="middle" font-size="15">Thermal Conductivity (W/m·K)</text>
+<circle class="data" cx="123.1" cy="196.4" r="4"/><circle class="data" cx="150.5" cy="153.6" r="4"/><circle class="data" cx="170.7" cy="118.9" r="4"/><circle class="data" cx="195.1" cy="110.6" r="4"/><circle class="data" cx="231.2" cy="100.8" r="4"/><circle class="data" cx="243.1" cy="84.5" r="4"/><circle class="data" cx="277.9" cy="75.9" r="4"/><circle class="data" cx="318.5" cy="112.1" r="4"/><circle class="data" cx="365.0" cy="98.4" r="4"/><circle class="data" cx="413.3" cy="160.7" r="4"/><circle class="data" cx="460.7" cy="231.2" r="4"/><circle class="data" cx="516.6" cy="274.7" r="4"/><circle class="data" cx="578.1" cy="333.6" r="4"/><circle class="data" cx="641.7" cy="376.4" r="4"/><circle class="data" cx="839.9" cy="464.6" r="4"/>
+<polyline class="curve" stroke="#e67e22" points="123.1,141.3 163.1,107.8 203.2,94.6 243.2,98.8 283.3,116.2 323.3,142.3 363.4,173.3 403.4,206.3 443.4,239.2 483.5,270.8 523.5,300.3 563.6,327.6 603.6,352.4 643.7,374.8 683.7,395.1 723.8,413.3 763.8,429.7 803.9,444.5 839.9,456.5"/>
+<polyline class="curve" stroke="#f1c40f" points="123.1,164.1 163.1,124.3 203.2,102.5 243.2,97.1 283.3,105.4 323.3,123.8 363.4,149.0 403.4,177.9 443.4,208.3 483.5,238.7 523.5,268.0 563.6,295.7 603.6,321.3 643.7,345.0 683.7,366.5 723.8,386.2 763.8,404.0 803.9,420.2 839.9,433.4"/>
+<polyline class="curve" stroke="#8e44ad" points="123.1,193.4 163.1,137.2 203.2,99.1 243.2,81.8 283.3,84.3 323.3,103.1 363.4,133.1 403.4,169.4 443.4,208.0 483.5,246.2 523.5,282.4 563.6,315.6 603.6,345.7 643.7,372.6 683.7,396.4 723.8,417.6 763.8,436.2 803.9,452.7 839.9,466.0"/>
+<polyline class="curve" stroke="#27ae60" points="123.1,199.0 163.1,140.5 203.2,99.6 243.2,79.5 283.3,80.0 323.3,97.7 363.4,127.5 403.4,164.2 443.4,203.7 483.5,242.9 523.5,280.0 563.6,314.1 603.6,344.8 643.7,372.3 683.7,396.6 723.8,418.1 763.8,437.0 803.9,453.7 839.9,467.1"/>
+<rect x="598" y="50" width="270" height="132" fill="white" stroke="#aaa"/>
+<circle cx="610" cy="70" r="4" fill="#1f77b4"/><text x="628" y="74" font-size="13">Experimental Data</text>
+<line x1="602" y1="94" x2="620" y2="94" stroke="#e67e22" stroke-width="2"/><text x="628" y="98" font-size="13">Equation 1 - GLLS</text>
+<line x1="602" y1="118" x2="620" y2="118" stroke="#f1c40f" stroke-width="2"/><text x="628" y="122" font-size="13">Equation 1 - fminsearch</text>
+<line x1="602" y1="142" x2="620" y2="142" stroke="#8e44ad" stroke-width="2"/><text x="628" y="146" font-size="13">Equation 2 - GLLS</text>
+<line x1="602" y1="166" x2="620" y2="166" stroke="#27ae60" stroke-width="2"/><text x="628" y="170" font-size="13">Equation 2 - fminsearch</text>
+</svg>
